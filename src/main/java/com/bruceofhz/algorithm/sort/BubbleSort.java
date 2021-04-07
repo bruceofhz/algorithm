@@ -15,7 +15,7 @@ public class BubbleSort {
     }
 
     private static void dataSort(int[] a, int n) {
-        List<Integer> collect = Arrays.stream(a).boxed().collect(Collectors.toList());
+        List<Integer> collect;
         for (int i = 0; i < n; i++) {
 
             // 当前比较的轮次里是否交换了

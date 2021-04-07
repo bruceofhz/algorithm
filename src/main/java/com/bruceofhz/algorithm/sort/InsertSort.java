@@ -19,7 +19,7 @@ public class InsertSort {
             return;
         }
 
-        List<Integer> collect = Arrays.stream(a).boxed().collect(Collectors.toList());
+        List<Integer> collect;
         for (int i = 1; i < n; i++) {
             // 有序区a[i-1]
             System.out.println("待排序元素：" + a[i]);
@@ -36,6 +36,7 @@ public class InsertSort {
             }
 
             // 插入排序值
+            System.out.println("j=" + j);
             a[j + 1] = value;
             collect = Arrays.stream(a).boxed().collect(Collectors.toList());
             System.out.println(collect);
